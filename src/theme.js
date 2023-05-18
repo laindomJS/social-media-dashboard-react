@@ -1,6 +1,11 @@
+/* eslint-disable quotes */
 import { extendTheme } from '@chakra-ui/react'
 
 export const theme = extendTheme({
+  fonts: {
+    heading: `'Inter', sans-serif`,
+    body: `'Inter', sans-serif`
+  },
   colors: {
     primary: {
       'lima-green': 'hsl(163, 72%, 41%)',
@@ -21,9 +26,5 @@ export const theme = extendTheme({
       'dark-grayish-blue': 'hsl(228, 12%, 44%)',
       'very-dark-blue': 'hsl(230, 17%, 14%)'
     }
-  },
-  fonts: {
-    // eslint-disable-next-line quotes
-    custom: `'Inter', sans-serif`
   }
 })
