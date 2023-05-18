@@ -10,9 +10,10 @@ export const theme = extendTheme({
     primary: {
       'lima-green': 'hsl(163, 72%, 41%)',
       'bright-red': 'hsl(356, 69%, 56%)',
-      'fb-color': 'hsl(208, 92%, 53%)',
-      'twit-color': 'hsl(203, 89%, 53%)',
-      'yt-color': 'hsl(348, 97%, 39%)'
+      facebook: 'hsl(208, 92%, 53%)',
+      twitter: 'hsl(203, 89%, 53%)',
+      youtube: 'hsl(348, 97%, 39%)',
+      instagram: 'hsl(329, 70%, 58%)'
     },
     dark: {
       'very-dark-blue': 'hsl(230, 17%, 14%)',
