@@ -10,7 +10,7 @@ export const StatsContainer = () => {
       w='full'
       mt='2rem'
       display='flex'
-      h={{ base: 'fit-content', md: '480px' }}
+      h='fit-content'
       flexDirection={{ base: 'column', md: 'row' }}
       justifyContent={{ base: 'center', md: null }}
     >

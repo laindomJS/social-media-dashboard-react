@@ -11,6 +11,7 @@ export const HeaderContainer = () => {
       alignItems={{ base: 'flex-start', md: 'center' }}
       flexDirection={{ base: 'column', md: 'row' }}
       justifyContent='space-between'
+      px='1rem'
     >
 
       <Box as='section'>
