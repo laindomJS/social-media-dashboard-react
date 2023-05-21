@@ -1,4 +1,5 @@
-import { GridItem, Flex, Heading, Stat, StatArrow, StatHelpText, Text, useColorModeValue } from '@chakra-ui/react'
+import { GridItem, Flex, Heading, Stat, StatArrow, StatHelpText, Text, useColorModeValue, Icon } from '@chakra-ui/react'
+import { socialIcons, colors } from '../../utils/dictionaries'
 
 export const OverviewCard = (item) => {
   const cardBgColor = useColorModeValue('light.light-grayish-blue', 'dark.dark-desaturated-blue')
@@ -14,7 +15,11 @@ export const OverviewCard = (item) => {
       borderRadius='5px'
       position='relative'
     >
-      <Heading as='h3' fontSize='16px' mb='1rem' color={titleColor}>{item.name}</Heading>
+      <Flex w='full' justifyContent='space-between'>
+        <Heading as='h3' fontSize='16px' mb='1rem' color={titleColor}>{item.name}</Heading>
+        <Icon as={socialIcons[item.social_media]} boxSize={5} fill={colors[item.social_media]} />
+      </Flex>
+
       <Flex w='full' justifyContent='space-between' alignItems='flex-end'>
 
         <Text fontSize='30px' fontWeight='600'>

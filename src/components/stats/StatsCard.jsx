@@ -1,4 +1,5 @@
-import { Box, Heading, Text, useColorModeValue, Stat, StatArrow, StatHelpText } from '@chakra-ui/react'
+import { Box, Flex, Heading, Text, useColorModeValue, Stat, StatArrow, StatHelpText, Icon } from '@chakra-ui/react'
+import { socialIcons, colors } from '../../utils/dictionaries'
 
 export const StatsCard = (follow) => {
   const bgCard = useColorModeValue('light.light-grayish-blue', 'dark.dark-desaturated-blue')
@@ -17,9 +18,14 @@ export const StatsCard = (follow) => {
       borderTopColor={`primary.${follow.social_media}`}
       borderRadius='8px'
     >
-      <Text fontSize='14px' fontWeight='600' color={textColor}>
-        {follow.username}
-      </Text>
+
+      <Flex w='fit-content' alignItems='center' mx='auto'>
+        <Icon as={socialIcons[follow.social_media]} boxSize={5} fill={colors[follow.social_media]} />
+        <Text ml='.7rem' w='fit-content' fontSize='15px' fontWeight='600' color={textColor}>
+          {follow.username}
+        </Text>
+      </Flex>
+
       <Box my='.5rem'>
         <Heading fontSize='50px'>{follow.followers}</Heading>
         <Text textTransform='uppercase' fontWeight='400' color={textColor} letterSpacing='4px'>
