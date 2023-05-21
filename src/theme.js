@@ -25,7 +25,8 @@ export const theme = extendTheme({
       'very-pale-blue': 'hsl(225, 100%, 98%)',
       'light-grayish-blue': 'hsl(227, 47%, 96%)',
       'dark-grayish-blue': 'hsl(228, 12%, 44%)',
-      'very-dark-blue': 'hsl(230, 17%, 14%)'
+      'very-dark-blue': 'hsl(230, 17%, 14%)',
+      'toggle-color': 'hsl(230, 22%, 74%)'
     }
   }
 })

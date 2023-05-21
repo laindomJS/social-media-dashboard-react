@@ -4,6 +4,7 @@ import { socialIcons, colors } from '../../utils/dictionaries'
 export const StatsCard = (follow) => {
   const bgCard = useColorModeValue('light.light-grayish-blue', 'dark.dark-desaturated-blue')
   const textColor = useColorModeValue('light.dark-grayish-blue', 'dark.desaturated-blue')
+  const hoverColor = useColorModeValue('gray.200', 'blue.700')
 
   return (
     <Box
@@ -17,6 +18,9 @@ export const StatsCard = (follow) => {
       borderTop='3px solid'
       borderTopColor={`primary.${follow.social_media}`}
       borderRadius='8px'
+      transition='.2s ease-in'
+      cursor='pointer'
+      _hover={{ bgColor: hoverColor }}
     >
 
       <Flex w='fit-content' alignItems='center' mx='auto'>
